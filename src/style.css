@@ -514,7 +514,7 @@ footer > div > p {
 
 footer > p {
   font-size: var(--text-size-default);
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 footer > div > p:hover {
