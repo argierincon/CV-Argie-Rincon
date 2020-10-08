@@ -531,12 +531,50 @@ footer > div > p > a :hover {
 @media (max-width: 768px) {
   header > nav > p {
     width: 20%;
-    /* margin-left: 8.5%; */
+    font-size: 1.3rem;
   }
 
   header > nav > ul {
     width: 60%;
+    font-size: 0.9rem;
   }
+
+  .home {
+    background-size: 100% 100%;
+  }
+
+  .home__info {
+    width: 70%;
+    height: 56vh;
+  }
+
+  .home__info > div {
+    line-height: 2rem;
+    margin-left: 2rem;
+  }
+
+  .home__info > img {
+    width: 50%;
+  }
+
+  .home__info > div > h1 {
+    font-size: 2.5rem;
+    width: 60%;
+    line-height: 2.5rem;
+  }
+
+  .home__info > div > p {
+    font-size: 1.2rem;
+  }
+
+  .about {
+    margin-top: 0;
+  }
+
+  .about__bio > img {
+    width: 34%;
+  }
+
   .about__education {
     flex-direction: column;
   }
@@ -547,6 +585,10 @@ footer > div > p > a :hover {
 
   .technicals > div {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .softs h3 {
+    margin-left: 8.5%;
   }
 
   .softs > div {
@@ -577,5 +619,144 @@ footer > div > p > a :hover {
 
   .projects-card {
     height: 25rem;
+  }
+}
+
+@media (max-width: 360px) {
+  header > nav {
+    display: none;
+  }
+
+  .home__info {
+    flex-direction: column;
+  }
+
+  .home__info > div {
+    width: 90%;
+    line-height: 2.5rem;
+    margin: 1rem 3rem 0 0;
+  }
+
+  .home__info > div > h1 {
+    width: 100%;
+  }
+
+  .home__info > img {
+    width: 65%;
+    margin-left: 9.5rem;
+  }
+
+  .about__bio {
+    flex-direction: column;
+  }
+
+  .about__bio h3 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+
+  .about__bio svg {
+    transform: translate(0.4rem, 0.3rem);
+    width: 1.3rem;
+  }
+
+  .about__bio > div {
+    width: 80%;
+  }
+
+  .about__bio > img {
+    width: 70%;
+    transform: translatey(-2rem);
+  }
+
+  .about__education {
+    margin-top: 1rem;
+  }
+
+  .courses {
+    margin: 0 2.5rem;
+  }
+
+  .timeline {
+    height: 23rem;
+    transform: translateY(-1.4rem);
+  }
+
+  .enero20 {
+    transform: translate(-0.4rem, 8.1rem);
+  }
+
+  .abril20 {
+    transform: translate(-0.4rem, 14rem);
+  }
+
+  .actualidad {
+    transform: translate(-0.4rem, 25.9rem);
+  }
+
+  .technicals > div {
+    grid-gap: 2rem 0rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .technicals > div > div {
+    width: 10rem;
+  }
+
+  .skills h3 {
+    margin-bottom: 0;
+  }
+
+  .softs > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .languages > div > div {
+    margin: 2rem 0;
+  }
+
+  .progress-bar {
+    width: 100%;
+  }
+
+  .languages > div > div:nth-child(1) {
+    margin-top: 1rem;
+  }
+
+  .experience {
+    margin-top: 1rem;
+  }
+
+  .experience > div {
+    margin-top: 3rem;
+  }
+
+  .experience-card {
+    width: 80%;
+    margin-top: 0;
+    height: 25rem;
+    overflow: scroll;
+  }
+
+  .projects > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer p {
+    width: 50%;
+    text-align: center;
+  }
+
+  footer > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding-top: 2rem;
+  }
+
+  footer > p {
+    font-size: 1rem;
   }
 }
