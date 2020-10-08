@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV Virtual Argie Rincón</title>
   <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,12 +16,11 @@
       <nav>
         <p>Argie Rincón</p>
         <ul>
-          <li>Inicio</li>
-          <li>Acerca de mi</li>
-          <li>Habilidades</li>
-          <li>Experiencia</li>
-          <li>Proyectos</li>
-          <li>Contáctame</li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#about">Acerca de mi</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Proyectos</a></li>
         </ul>
       </nav>
     </header>
@@ -33,16 +33,16 @@
       <img src="./assets/img/argie-rincon.png" alt="Argie Rincón">
     </section>
   </section>
-  <section class="about">
+  <section id="about" class="about">
     <div class="about__bio">
       <img src="./assets/img/argie.png" alt="Argie Rincón">
       <div>
         <h3><span class="text-gradient">Soy Argie Rincón, </span>FrontEnd Developer egresada de la generación 12 de
-          Laboratoria en Lima
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+          &lt;Laboratoria&gt; en Lima
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
             <path fill="#D91023" d="M4 5C1.791 5 0 6.791 0 9v18c0 2.209 1.791 4 4 4h8V5H4z" />
             <path fill="#EEE" d="M12 5h12v26H12z" />
-            <path fill="#D91023" d="M32 5h-8v26h8c2.209 0 4-1.791 4-4V9c0-2.209-1.791-4-4-4z" /></svg> -->
+            <path fill="#D91023" d="M32 5h-8v26h8c2.209 0 4-1.791 4-4V9c0-2.209-1.791-4-4-4z" /></svg>
         </h3>
         <p>Cuento con ocho meses de experiencia en el desarrollo de sitios web interactivos, gestionando el envío y
           recepción de datos a diversas plataformas de almacenamiento, garantizando la adaptación de estos a distintas
@@ -70,22 +70,71 @@
       </div>
       <div class="courses">
         <h2>Cursos <span class="text-gradient">de Formación</span></h2>
-        <div>
-          <h3>SoloLearn</h3>
-          <p>HTML Fundamental course</p>
-          <p>CSS Fundamental course</p>
-          <p>JavaScript Tutorial course</p>
+        <div class="timeline-item febrero19">
+          <div class="center"></div>
         </div>
-        <div>
-          <h3>Crehana</h3>
-          <p>Inteligencia Emocional para líderes</p>
-          <p>Marketing Digital Desde cero</p>
-          <p>Design Thinking: Innovación Centrada en las Personas</p>
+        <div class="timeline-item enero20">
+          <div class="center"></div>
+        </div>
+        <div class="timeline-item abril20">
+          <div class="center"></div>
+        </div>
+        <div class="timeline-item actualidad">
+          <div class="center"></div>
+        </div>
+        <div class="flex-center">
+          <div class="timeline"></div>
+          <div>
+            <div>
+              <h3>SoloLearn</h3>
+              <div>
+                <p class="date">Febrero 2019</p>
+                <a href="https://www.sololearn.com/Certificate/1014-12597999/pdf/" target="__blank">
+                  HTML Fundamental course
+                </a>
+                <a href="https://www.sololearn.com/Certificate/1023-12597999/pdf/" target="__blank">
+                  CSS Fundamental course
+                </a>
+              </div>
+              <div>
+                <p class="date">Enero 2020</p>
+                <a href="https://www.sololearn.com/Certificate/1024-12597999/pdf/" target="__blank">
+                  JavaScript Tutorial course
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3>Crehana</h3>
+              <div>
+                <p class="date">Abril 2020</p>
+                <a href="https://www.crehana.com/diplomas/c9229d19/" target="__blank">
+                  Inteligencia Emocional para líderes
+                </a>
+                <p>
+                  <a href="https://www.crehana.com/diplomas/b15bbb8c/" target="__blank">
+                    Marketing Digital Desde cero
+                  </a>
+                </p>
+                <a href="https://www.crehana.com/diplomas/10331745/" target="__blank">
+                  Design Thinking: Innovación Centrada en las Personas
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3>Udemy</h3>
+              <div>
+                <p class="date">Actualidad</p>
+                <a href="https://www.udemy.com/course/react-cero-experto/" target="__blank">
+                  React: De cero a experto (Hooks y MERN)
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="skills flex-colum-center">
+  <section id="skills" class="skills flex-colum-center">
     <h2 class="text-gradient">Habilidades</h2>
     <div class="technicals">
       <h3>Técnicas</h3>
@@ -146,18 +195,28 @@
         <p>Trabajo en equipo</p>
       </div>
     </div>
-    <div>
+    <div class="languages">
       <h3>Idiomas</h3>
       <div>
-        <p>Inglés, básico nivel A-2</p>
-        <p>Castellano Nativo</p>
+        <div>
+          <p>Castellano Nativo</p>
+          <div class="progress-bar">
+            <div class="progress progress-100"></div>
+          </div>
+        </div>
+        <div>
+          <p>Inglés, básico nivel A-2</p>
+          <div class="progress-bar">
+            <div class="progress progress-35"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <section class="experience flex-colum-center">
+  <section id="experience" class="experience flex-colum-center">
     <h2 class="text-gradient">Experiencia</h2>
     <div>
-      <div class="experience-card">
+      <div class="experience-card emphasis-card">
         <div>
           <h3>Laboratoria</h3>
           <p class="bold-italic">Estudiante - Track FrontEnd</p>
@@ -184,7 +243,7 @@
           <li>Coordinación y logística de los eventos.</li>
         </ul>
       </div>
-      <div class="experience-card">
+      <div class="experience-card emphasis-card">
         <div>
           <h3>J&L Representaciones Médicas S.A.C</h3>
           <p class="bold-italic">Asistente Administrativo</p>
@@ -201,17 +260,109 @@
       </div>
     </div>
   </section>
-  <section class="projects">
+  <section id="projects" class="projects">
     <h2 class="text-gradient flex-colum-center">Proyectos</h2>
-    <div class="flex-center">
-      <div class="flex-center">
-        <img src="./assets/img/goldbank.gif" alt="GoldBank">
-        <img src="./assets/img/coderplace.gif" alt="CoderPlace gif">
+    <div>
+      <div class="projects-card">
+        <div class="flex-center">
+          <img class="img-desktop" src="./assets/img/burger-queen-desktop.png" alt="Burger Queen Desktop">
+          <img class="img-mobile" src="./assets/img/burger-queen-mobile.png" alt="Burger Queen Mobile">
+        </div>
+        <h4>Burger Queen</h4>
+        <p>Sistema para optimizar la gestión de órdenes del restaurante Burger Queen, que permite la solicitud, envío y
+          almacenamiento de datos e integración con el API creada especialmente para esta plataforma.</p>
+        <div class="flex-center">
+          <a href="https://www.figma.com/proto/LDBAxVtXjNQb5RgMYLuRfn/BURGER-QUEEN?node-id=274%3A856&scaling=scale-down"
+            target="__blank"><i class="fa fa-laptop"></i>Prototipo</a>
+          <a href="https://github.com/argierincon/LIM012-fe-burger-queen-api-client" target="__blank"><i
+              class="fa fa-github"></i>GitHub</a>
+        </div>
       </div>
+      <div class="projects-card">
+        <div class="flex-center">
+          <img class="img-desktop" src="./assets/img/coderplace.gif" alt="CoderPlace gif">
+          <img class="img-mobile" src="./assets/img/coderplace-mobile.png" alt="CoderPlace Mobile">
+        </div>
+        <h4>CoderPlace</h4>
+        <p>Red social dirigida a Programadores de todo el mundo, donde podrán compartir herramientas, tips, consejos
+          de buenas prácticas, ayuda para errores de código.</p>
+        <div class="flex-center">
+          <a href="https://argierincon.github.io/LIM012-fe-social-network/src/" target="__blank"><i
+              class="fa fa-laptop"></i>Website</a>
+          <a href="https://github.com/argierincon/LIM012-fe-social-network" target="__blank"><i
+              class="fa fa-github"></i>GitHub</a>
+        </div>
+      </div>
+      <div class="projects-card">
+        <div class="flex-center">
+          <img class="img-desktop" src="./assets/img/pokedex-dektop.png" alt="Pkédex Desktop">
+          <img class="img-mobile" src="./assets/img/pokedex-mobile.png" alt="Pokédex Mobile">
+        </div>
+        <h4>Nueva Pokédex</h4>
+        <p>Se trata de una web en la que los Jugadores de Pokémon GO podrán familiarizarse mejor con los pokémons de
+          la primera y segunda generación.</p>
+        <div class="flex-center">
+          <a href="https://argierincon.github.io/Data-Lovers-version-2/src/" target="__blank"><i
+              class="fa fa-laptop"></i>Website</a>
+          <a href="https://github.com/argierincon/Data-Lovers-version-2" target="__blank"><i
+              class="fa fa-github"></i>GitHub</a>
+        </div>
+      </div>
+      <div class="projects-card">
+        <div class="flex-center">
+          <img class="img-desktop" src="./assets/img/goldbank.gif" alt="GoldBank gif">
+          <img class="img-mobile" src="./assets/img/card-validation-mobile.png" alt="GoldBank Mobile">
+        </div>
+        <h4>GoldBank</h4>
+        <p>Implementación de algoritmo de Luhn para validar el número de tarjeta de crédito virtual de los actuales y
+          futuros usuarios de la Fintech GoldBank.</p>
+        <div class="flex-center">
+          <a href="https://argierincon.github.io/LIM012-card-validation/src/" target="__blank"><i
+              class="fa fa-laptop"></i>Website</a>
+          <a href="https://github.com/argierincon/LIM012-card-validation" target="__blank"><i
+              class="fa fa-github"></i>GitHub</a>
+        </div>
+      </div>
+    </div>
+
     </div>
   </section>
   <section class="contact"></section>
-  <footer></footer>
+  <footer>
+    <div>
+      <p>
+        <a href="https://web.facebook.com/argierincon" target="__blank">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </p>
+      <p>
+        <a href="https://www.instagram.com/argierincon/?hl=es-la" target="__blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </p>
+      <p>
+        <a href="https://twitter.com/argierincon" target="__blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </p>
+      <p>
+        <a href="https://www.youtube.com/channel/UCHaUDfM3H5rorVT-7mYALRw/featured" target="__blank">
+          <i class="fa fa-youtube-play"></i>
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/argierincon" target="__blank">
+          <i class="fa fa-github"></i>
+        </a>
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/argierincon/" target="__blank">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </p>
+    </div>
+    <p>&copy; 2020 Argie Rincón. All Rights Reserved</p>
+  </footer>
 </body>
 
 </html>
