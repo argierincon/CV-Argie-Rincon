@@ -527,3 +527,55 @@ footer > div > p > a :hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media (max-width: 768px) {
+  header > nav > p {
+    width: 20%;
+    /* margin-left: 8.5%; */
+  }
+
+  header > nav > ul {
+    width: 60%;
+  }
+  .about__education {
+    flex-direction: column;
+  }
+
+  .courses {
+    margin-top: 2rem;
+  }
+
+  .technicals > div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .softs > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .languages {
+    width: 74%;
+  }
+
+  .languages > div {
+    flex-direction: column;
+  }
+
+  .languages > div > div {
+    margin: 2rem auto;
+  }
+
+  .experience > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-card {
+    width: 60%;
+    margin: 2rem;
+  }
+
+  .projects-card {
+    height: 25rem;
+  }
+}
